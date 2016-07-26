@@ -1,5 +1,3 @@
-
-
 $(document).ready(function() {
 
 	console.log('hello')
@@ -64,28 +62,6 @@ var grabId;
 	});
 
 	// Event listener and handler to signup
-	// NEW USER
-	$signupForm.submit(function(e){
-		e.preventDefault();
-		console.log('!!====SIGN UP====!!');
-		console.log($signupForm.find('[name=username]').val());
-		console.log($signupForm.find('[name=email]').val());
-		console.log($signupForm.find('[name=password]').val());
-		$.ajax({
-			url: '/users/new',
-			method: 'POST',
-			data: {
-				username: $signupForm.find('[name=username]').val(),
-				email: $signupForm.find('[name=email]').val(),
-				password: $signupForm.find('[name=password]').val()
-			}
-		}).done(function(data){
-			// if the response is true;
-			if(data) {
-				redirectLogin();
-			}
-		});
-	});
 
 	//logout
 	$logoutLink.click(function(e){
@@ -246,24 +222,26 @@ var grabId;
 		$container.empty();
 		var $para3 = $("<br/><h2>This is why I think we would be good for each other</h2>")
 		var $ul = $('<ul id="like-list"></ul>')
-		var $item1 = $('<li>You are so incredibly caring towards everybody</li>')
-		var $item2 = $('<li>You think about others before yourself</li>')
-		var $item3 = $('<li>You really try to improve yourself, and you tackle problems relentlessly</li>')
-		var $item4 = $('<li>You are so easy to talk to, and we have amazing conversations!</li>')
-		var $item5 = $("<li><h3>I always feel really good and happy whenever I'm around you</h3></li>")
+		var $item1 = $('<li>We would push each other to become better PROGRAMMERS!</li>')
+		var $item2 = $('<li>We have undeniable chemistry!<br/> We have already laughed, cried, and been there for one another.</li>')
+		var $item3 = $('<li>Uhh... FOOD!!!!  </li>')
+		var $item4 = $('<li>I want to be there for you for any struggles you would face in life</li>')
+		var $item5 = $("<li>We would share incredible life experiences with one another</li>")
+		var $item6 = $("<li>We will definitely try to have a healthy, honest, two-way-street relationship.<br/>  I don't want any more cloak-and-dagger. <br/> We can be who we are, all the time, no judgements.  </li>")
+
 		$ul.append($item1);
 		$ul.append($item2);
 		$ul.append($item3);
 		$ul.append($item4);
 		$ul.append($item5);
+		$ul.append($item6);
 		$container.append($para3);
 		$container.append($ul);
 
-		// var $next = $('<p id="next-link">Next</p>')
-		// $next.click(function(e){
-		// 	e.preventDefault();
-		// 	renderFive();
-		// })
-		// $container.append($next)
-
+		var $next = $('<p id="next-link">Next</p>')
+		$next.click(function(e){
+			e.preventDefault();
+			renderSeven();
+		})
+		$container.append($next)
 	}
