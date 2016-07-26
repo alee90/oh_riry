@@ -122,7 +122,7 @@ var grabId;
 	var renderLily = function(){
 		console.log('hi');
 		var $container = $('#main-container');
-		var $preface = $('<p>Hi, Lily!  <br/><br /> I just wanted to write this app so I could really show how much I like you.</p>')
+		var $preface = $('<p>Hi.  <br/><br /> I just wanted to write this app so I could really show how much I like you.</p>')
 		$container.append($preface);
 
 		var $next = $('<p id="next-link">Next</p>')

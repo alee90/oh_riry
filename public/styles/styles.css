@@ -23,6 +23,7 @@ a:hover {
 #convo {
 	width: 35%;
 	height: 35em;
+	border: 1px solid black;
 }
 
 header {
