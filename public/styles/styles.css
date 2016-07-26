@@ -1,0 +1,83 @@
+html{
+	text-align: center;
+}
+
+body { 
+	font-size: 2.05em;
+	line-height: 1.25em;
+	font-family: "Quattrocento";
+	background-color: papayawhip;
+
+}
+
+a {
+	color: #4C9CF1;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #444;
+}
+
+#convo {
+	width: 35%;
+	height: 35em;
+}
+
+header {
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+
+}
+
+#login{
+	margin-top: 100px;
+}
+
+nav {
+
+	float: right;
+	padding: 20px;	
+
+}
+
+#iframe{
+	border: 2px solid yellow;
+}
+
+ul{
+	padding: 0;
+	list-style-type: none;
+}
+
+li {
+	list-style-type: none;
+	padding: 10px
+}
+
+#next-link{
+	margin-top: 2em;
+}
+
+#next-link:hover{
+	color: orange;
+}
+
+#riry{
+	width: 30em;
+	height: 22em;
+	padding: 2em;
+}
+#riry2{
+	width: 25em;
+	height: 19em;
+}
+#riry3{
+	height: 18em;
+	width: 20em;
+}
