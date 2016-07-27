@@ -167,16 +167,18 @@ var grabId;
 		console.log('four');
 		var $container = $('#main-container');
 		$container.empty();
-		var $para3 = $("<br/><h2>Here are some of the reasons I think you're amazing</h2>")
+		var $para3 = $("<br/><h2>Here are some of the reasons why I think you're amazing</h2>")
 		var $ul = $('<ul id="like-list"></ul>')
 		var $item1 = $('<li>You are so incredibly caring towards everybody</li>')
 		var $item2 = $('<li>You think about others before yourself</li>')
 		var $item3 = $('<li>You really try to improve yourself, and you tackle problems relentlessly</li>')
+		var $item6 = $('<li>You are so incredibly pretty and I TOTALLY want to exploit that (jk)</li>')
 		var $item4 = $('<li>You are so easy to talk to, and we have amazing conversations!</li>')
 		var $item5 = $("<li><h3>I always feel really good and happy whenever I'm around you</h3></li>")
 		$ul.append($item1);
 		$ul.append($item2);
 		$ul.append($item3);
+		$ul.append($item6);
 		$ul.append($item4);
 		$ul.append($item5);
 		$container.append($para3);
@@ -232,7 +234,7 @@ var grabId;
 		var $item4 = $('<li>I want to be there for you for any struggles you would face in life</li>')
 		var $item5 = $("<li>We would share incredible life experiences with one another</li>")
 		var $item6 = $("<li>We will definitely try to have a healthy, honest, two-way-street relationship.<br/>  I don't want any more cloak-and-dagger. <br/> We can be who we are, all the time, no judgements.  </li>")
-		var $item7 = $("<li>I'm not an everlasting twatwaffle :D</li>")
+		var $item7 = $("<li>I'm not an everlasting twatwaffle :)</li>")
 
 		$ul.append($item1);
 		$ul.append($item2);
@@ -268,4 +270,39 @@ var grabId;
 		$container.append(iframe3);
 		$container.append(iframe4);
 
+		var $next = $('<p id="next-link">Next</p>')
+		$next.click(function(e){
+			e.preventDefault();
+			renderEight();
+		})
+		$container.append($next)
+	}
+
+	var renderEight = function(){
+		console.log('eight');
+		var $container = $('#main-container');
+		$container.empty();		
+		$container.append('<h2>More Doggie For You!</h2>')
+		$.ajax({
+			method: 'GET',
+			url: '/giphy'
+		}).done(function(x){
+			console.log(x.data.image_url)
+			var $dog = $('<img src="'+x.data.image_url+'"/><br>')
+			$container.append($dog)
+			var $next = $('<p id="next-link">Next</p>')
+				$next.click(function(e){
+				e.preventDefault();
+				renderNine();
+			})
+		$container.append($next)
+		})		
+	}
+
+	var renderNine = function(){
+		var $container = $('#main-container');
+		$container.empty();		
+		$container.append('<h2>Fin</h2><br>')		
+		var $closing = $("<p>Lily, if I could guarantee you a perfect future, I would.  I can't do that.  I really have no idea<br> what's going to happen over the next couple of days, months, years.  All I do know is, I want to spend it with you! <br> I want to grow and explore uncharted territory alongside you, as we both delve into new careers and a new life. <br> The way I handled this whole situation has been subpar, but I felt that on that Tuesday, I ran out of time, and I had to act. <br> I understand your hesitation 100%, and I wish there was something I could do to ease your tension.  <br /><br /> To get to any stage, we first have to go on a date! <br> I want to see you face-to-face and discuss everything with you.  This is something I very much want.<br /><br /> If you truly don't want to undergo this adventure with me, I understand, and I will stop pursuing you.<br>  I want you to be my close friend, though.  You're already such an important part of my life and I'd be so sad if you weren't there.     </p>");
+		$container.append($closing);
 	}
