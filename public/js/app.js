@@ -252,3 +252,20 @@ var grabId;
 		})
 		$container.append($next)
 	}
+
+	var renderSeven = function(){
+		console.log('seven')
+		var $container = $('#main-container');
+		$container.empty();		
+		var iframe1 = $('<iframe id="iframe2" src="http://lilywho.github.io/blackjack/"></iframe>')
+		var iframe2 = $('<iframe id="iframe2" src="https://what-is-the-weather.herokuapp.com/weather"></iframe>')
+		var iframe3 = $('<iframe id="iframe2" src="https://my-foodie-app.herokuapp.com/"></iframe>')
+		var iframe4 = $('<iframe id="iframe2" src="https://still-waters-28982.herokuapp.com/"></iframe>')
+		$container.append("<h2>Look at some of the amazing things you've done!</h2>")
+		$container.append("<h3>I hope you realize how talented you are at this.  Please don't give it up.</h3>")
+		$container.append(iframe1);
+		$container.append(iframe2);
+		$container.append(iframe3);
+		$container.append(iframe4);
+
+	}

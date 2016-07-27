@@ -51,6 +51,12 @@ nav {
 	border: 2px solid yellow;
 }
 
+#iframe2{
+	width: 40em;
+	height: 20em;
+	margin-bottom: 2em;
+}
+
 ul{
 	padding: 0;
 	list-style-type: none;
