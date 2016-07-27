@@ -98,7 +98,7 @@ var grabId;
 	var renderLily = function(){
 		console.log('hi');
 		var $container = $('#main-container');
-		var $preface = $('<p>Hi.  <br/><br /> I just wanted to write this app so I could really show how much I like you.</p>')
+		var $preface = $("<p>Hi.  <br/><br /> I just wanted to write this app so I could really show how much I like you.<br/> I know it hasn't been the easiest time for you and I am sorry for that,<br/> but I don't regret telling you how I feel.</p>")
 		$container.append($preface);
 
 		var $next = $('<p id="next-link">Next</p>')
@@ -117,12 +117,16 @@ var grabId;
 		var $img1 = $('<img id="convo" src="./convo1.jpg">')
 		var $img2 = $('<img id="convo" src="./convo2.jpg"><br>')
 		var $img3 = $('<img id="convo" src="./convo3.jpg"><br>')
+		var $img4 = $('<img id="convo" src="./dadjokes.jpg"><br>')
 
-		var $para2 = $("<br/><p>This is when I fell for you.</p>")
+
+		var $para2 = $("<br/><p>This is the moment I fell for you.</p>")
 
 		$container.append($para1);
 		$container.append($img1);
 		$container.append($img2);
+		$container.append('<h4>The Beginning of Dad Jokes</h4>')
+		$container.append($img4);
 		$container.append($para2);
 		$container.append($img3);
 
@@ -222,7 +226,7 @@ var grabId;
 		$container.empty();
 		var $para3 = $("<br/><h2>This is why I think we would be good for each other</h2>")
 		var $ul = $('<ul id="like-list"></ul>')
-		var $item1 = $('<li>We would push each other to become better PROGRAMMERS!</li>')
+		var $item1 = $('<li>We would push each other to become better PROGRAMMERS!<br /> I firmly believe we could both be successful!</li>')
 		var $item2 = $('<li>We have undeniable chemistry!<br/> We have already laughed, cried, and been there for one another.</li>')
 		var $item3 = $('<li>Uhh... FOOD!!!!  </li>')
 		var $item4 = $('<li>I want to be there for you for any struggles you would face in life</li>')

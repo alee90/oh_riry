@@ -6,7 +6,9 @@ var mongoose = require("mongoose");
 var bodyParser = require("body-parser")
 var methodOverride = require("method-override");
 var cookieParser = require("cookie-parser");
-var db = process.env.MONGODB_URI || "mongodb://localhost/lily_dev";
+// var db = process.env.MONGODB_URI || "mongodb://localhost/lily_dev";
+var mongoUri = process.env.MONGODB_URI || 'mongodb://localhost/lily_dev';
+
 var port = process.env.PORT || 3000;
 
 //MIDDLEWARE
@@ -24,7 +26,9 @@ app.use(methodOverride(function(req, res){
 }));
 
 //DATABASE
-mongoose.connect(db);
+// mongoose.connect(db);
+mongoose.connect(mongoUri);
+
 
 //CONTROLLERS
 
@@ -33,7 +37,7 @@ app.use("/users", users);
 
 var auth = require("./controllers/auth.js");
 app.use("/auth", auth);
-
+x	
 var lily = require("./controllers/lily.js");
 app.use("/lily", lily);
 
