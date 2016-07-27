@@ -226,12 +226,13 @@ var grabId;
 		$container.empty();
 		var $para3 = $("<br/><h2>This is why I think we would be good for each other</h2>")
 		var $ul = $('<ul id="like-list"></ul>')
-		var $item1 = $('<li>We would push each other to become better PROGRAMMERS!<br /> I firmly believe we could both be successful!</li>')
+		var $item1 = $('<li>We would push each other to become better PROGRAMMERS!<br /> I firmly believe we could both be successful if we give it our all!</li>')
 		var $item2 = $('<li>We have undeniable chemistry!<br/> We have already laughed, cried, and been there for one another.</li>')
 		var $item3 = $('<li>Uhh... FOOD!!!!  </li>')
 		var $item4 = $('<li>I want to be there for you for any struggles you would face in life</li>')
 		var $item5 = $("<li>We would share incredible life experiences with one another</li>")
 		var $item6 = $("<li>We will definitely try to have a healthy, honest, two-way-street relationship.<br/>  I don't want any more cloak-and-dagger. <br/> We can be who we are, all the time, no judgements.  </li>")
+		var $item7 = $("<li>I'm not an everlasting twatwaffle :D</li>")
 
 		$ul.append($item1);
 		$ul.append($item2);
@@ -239,6 +240,8 @@ var grabId;
 		$ul.append($item4);
 		$ul.append($item5);
 		$ul.append($item6);
+		$ul.append($item7);
+
 		$container.append($para3);
 		$container.append($ul);
 
