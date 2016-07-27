@@ -172,7 +172,7 @@ var grabId;
 		var $item1 = $('<li>You are so incredibly caring towards everybody</li>')
 		var $item2 = $('<li>You think about others before yourself</li>')
 		var $item3 = $('<li>You really try to improve yourself, and you tackle problems relentlessly</li>')
-		var $item6 = $('<li>You are so incredibly pretty and I TOTALLY want to exploit that (jk)</li>')
+		var $item6 = $('<li>You are so incredibly pretty like oh my goodness!</li>')
 		var $item4 = $('<li>You are so easy to talk to, and we have amazing conversations!</li>')
 		var $item5 = $("<li><h3>I always feel really good and happy whenever I'm around you</h3></li>")
 		$ul.append($item1);
