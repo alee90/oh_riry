@@ -173,7 +173,7 @@ var grabId;
 		var $item2 = $('<li>You think about others before yourself</li>')
 		var $item3 = $('<li>You really try to improve yourself, and you tackle problems relentlessly</li>')
 		var $item6 = $('<li>You are so incredibly pretty like oh my goodness!</li>')
-		var $item4 = $('<li>You are so easy to talk to, and we have amazing conversations!</li>')
+		var $item4 = $('<li>You are so easy to talk to, and we have amazing conversations.</li>')
 		var $item5 = $("<li><h3>I always feel really good and happy whenever I'm around you</h3></li>")
 		$ul.append($item1);
 		$ul.append($item2);
@@ -228,9 +228,9 @@ var grabId;
 		$container.empty();
 		var $para3 = $("<br/><h2>This is why I think we would be good for each other</h2>")
 		var $ul = $('<ul id="like-list"></ul>')
-		var $item1 = $('<li>We would push each other to become better PROGRAMMERS!<br /> I firmly believe we could both be successful if we give it our all!</li>')
-		var $item2 = $('<li>We have undeniable chemistry!<br/> We have already laughed, cried, and been there for one another.</li>')
-		var $item3 = $('<li>Uhh... FOOD!!!!  </li>')
+		var $item1 = $('<li>We would push each other to become better PROGRAMMERS!<br /> I firmly believe we could both be successful if we give it our all.</li>')
+		var $item2 = $('<li>We have undeniable chemistry.<br/> We have already laughed, cried, and been there for one another.</li>')
+		var $item3 = $('<li>Uhh... FOOD!  </li>')
 		var $item4 = $('<li>I want to be there for you for any struggles you would face in life</li>')
 		var $item5 = $("<li>We would share incredible life experiences with one another</li>")
 		var $item6 = $("<li>We will definitely try to have a healthy, honest, two-way-street relationship.<br/>  I don't want any more cloak-and-dagger. <br/> We can be who we are, all the time, no judgements.  </li>")
@@ -303,6 +303,6 @@ var grabId;
 		var $container = $('#main-container');
 		$container.empty();		
 		$container.append('<h2>Fin</h2><br>')		
-		var $closing = $("<p>Lily, if I could guarantee you a perfect future, I would.  I can't do that.  I really have no idea<br> what's going to happen over the next couple of days, months, years.  All I do know is, I want to spend it with you! <br> I want to grow and explore uncharted territory alongside you, as we both delve into new careers and a new life. <br> The way I handled this whole situation has been subpar, but I felt that on that Tuesday, I ran out of time, and I had to act. <br> I understand your hesitation 100%, and I wish there was something I could do to ease your tension.  <br /><br /> To get to any stage, we first have to go on a date! <br> I want to see you face-to-face and discuss everything with you.  This is something I very much want.<br /><br /> If you truly don't want to undergo this adventure with me, I understand, and I will stop pursuing you.<br>  I want you to be my close friend, though.  You're already such an important part of my life and I'd be so sad if you weren't there.     </p>");
+		var $closing = $("<p>Lily, if I could guarantee you a perfect future, I would.  I can't do that.  I really have no idea<br> what's going to happen over the next couple of days, months, years.  All I do know is, I want to spend it with you! <br> I want to grow and explore uncharted territory alongside you, as we both delve into new careers and a new life. <br> The way I handled this whole situation has been subpar, but I felt that on that Tuesday, I ran out of time, and I had to act. <br> I understand your hesitation 100%, and I wish there was something I could do to ease your tension.  <br /><br /> To get to any stage, we first have to go on a date. <br> I want to see you face-to-face and discuss everything with you.  This is something I very much want.<br /><br /> If you truly don't want to undergo this adventure with me, I understand, and I will stop pursuing you.<br>  I want you to be my close friend, though.  You're already such an important part of my life and I'd be so sad if you weren't there. <br /><br /> Please call me ASAP.  </p>");
 		$container.append($closing);
 	}
