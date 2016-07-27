@@ -29,7 +29,6 @@ app.use(methodOverride(function(req, res){
 // mongoose.connect(db);
 mongoose.connect(mongoUri);
 
-
 //CONTROLLERS
 
 var users = require("./controllers/users.js");
