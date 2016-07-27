@@ -151,7 +151,7 @@ var grabId;
 			url: '/giphy'
 		}).done(function(x){
 			console.log(x.data.image_url)
-			var $dog = $('<img src="'+x.data.image_url+'"/><br>')
+			var $dog = $('<img id="dog" src="'+x.data.image_url+'"/><br>')
 			$container.append($dog)
 			var $next = $('<p id="next-link">Next</p>')
 				$next.click(function(e){
