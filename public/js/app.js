@@ -288,7 +288,7 @@ var grabId;
 			url: '/giphy'
 		}).done(function(x){
 			console.log(x.data.image_url)
-			var $dog = $('<img src="'+x.data.image_url+'"/><br>')
+			var $dog = $('<img id="dog" src="'+x.data.image_url+'"/><br>')
 			$container.append($dog)
 			var $next = $('<p id="next-link">Next</p>')
 				$next.click(function(e){
@@ -303,6 +303,6 @@ var grabId;
 		var $container = $('#main-container');
 		$container.empty();		
 		$container.append('<h2>Fin</h2><br>')		
-		var $closing = $("<p>Lily, if I could guarantee you a perfect future, I would.  I can't do that.  I really have no idea<br> what's going to happen over the next couple of days, months, years.  All I do know is, I want to spend it with you! <br> I want to grow and explore uncharted territory alongside you, as we both delve into new careers and a new life. <br> The way I handled this whole situation has been subpar, but I felt that on that Tuesday, I ran out of time, and I had to act. <br> I understand your hesitation 100%, and I wish there was something I could do to ease your tension.  <br /><br /> To get to any stage, we first have to go on a date. <br> I want to see you face-to-face and discuss everything with you.  This is something I very much want.<br /><br /> If you truly don't want to undergo this adventure with me, I understand, and I will stop pursuing you.<br>  I want you to be my close friend, though.  You're already such an important part of my life and I'd be so sad if you weren't there. <br /><br /> Please call me ASAP.  </p>");
+		var $closing = $("<p>Lily, if I could guarantee you a perfect future, I would.  I can't do that.  I really have no idea<br> what's going to happen over the next couple of days, months, years.  All I do know is, I want to spend it with you. <br> I want to grow and explore uncharted territory alongside you, as we both delve into new careers and a new life. <br> The way I handled this whole situation has been subpar, but I felt that on that Tuesday, I ran out of time, and I had to act. <br> I understand your hesitation 100%, and I wish there was something I could do to ease your tension.  <br /><br /> To get to any stage, we first have to go on a date. <br> I want to see you face-to-face and discuss everything with you.  This is something I very much want.<br /><br /> If you truly don't want to undergo this adventure with me, I understand, and I will stop pursuing you.<br>  I want you to be my close friend, though.  You're already such an important part of my life and I'd be so sad if you weren't there. <br /><br /> Please call me ASAP.  I'm looking forward to it  <br /><br /> P.S. I was totally going to include a floating airbnb head <br> but, that'd just be cruel and unusual.  :)</p>");
 		$container.append($closing);
 	}
