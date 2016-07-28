@@ -101,7 +101,7 @@ var grabId;
 		var $preface = $("<p>Hi.  <br/><br /> I just wanted to write this app so I could really show how much I like you.<br/> I know it hasn't been the easiest time for you and I am sorry for that,<br/> but I don't regret telling you how I feel.</p>")
 		$container.append($preface);
 
-		var $next = $('<p id="next-link">Next</p>')
+		var $next = $('<p id="next-link">>>>>Next<<<<<</p>')
 		$next.click(function(e){
 			e.preventDefault();
 			renderTwo();
@@ -130,7 +130,7 @@ var grabId;
 		$container.append($para2);
 		$container.append($img3);
 
-		var $next = $('<p id="next-link">Next</p>')
+		var $next = $('<p id="next-link">>>>>Next<<<<<</p>')
 		$next.click(function(e){
 			e.preventDefault();
 			renderThree();
@@ -153,7 +153,7 @@ var grabId;
 			console.log(x.data.image_url)
 			var $dog = $('<img id="dog" src="'+x.data.image_url+'"/><br>')
 			$container.append($dog)
-			var $next = $('<p id="next-link">Next</p>')
+			var $next = $('<p id="next-link">>>>>Next<<<<<</p>')
 				$next.click(function(e){
 				e.preventDefault();
 				renderFour();
@@ -184,7 +184,7 @@ var grabId;
 		$container.append($para3);
 		$container.append($ul);
 
-		var $next = $('<p id="next-link">Next</p>')
+		var $next = $('<p id="next-link">>>>>Next<<<<<</p>')
 		$next.click(function(e){
 			e.preventDefault();
 			renderFive();
@@ -214,7 +214,7 @@ var grabId;
 		$container.append($img5)
 		$container.append($img6)
 
-		var $next = $('<p id="next-link">Next</p>')
+		var $next = $('<p id="next-link">>>>>Next<<<<<</p>')
 		$next.click(function(e){
 			e.preventDefault();
 			renderSix();
@@ -247,7 +247,7 @@ var grabId;
 		$container.append($para3);
 		$container.append($ul);
 
-		var $next = $('<p id="next-link">Next</p>')
+		var $next = $('<p id="next-link">>>>>Next<<<<<</p>')
 		$next.click(function(e){
 			e.preventDefault();
 			renderSeven();
@@ -270,7 +270,7 @@ var grabId;
 		$container.append(iframe3);
 		$container.append(iframe4);
 
-		var $next = $('<p id="next-link">Next</p>')
+		var $next = $('<p id="next-link">>>>>Next<<<<<</p>')
 		$next.click(function(e){
 			e.preventDefault();
 			renderEight();
@@ -290,7 +290,7 @@ var grabId;
 			console.log(x.data.image_url)
 			var $dog = $('<img id="dog" src="'+x.data.image_url+'"/><br>')
 			$container.append($dog)
-			var $next = $('<p id="next-link">Next</p>')
+			var $next = $('<p id="next-link">>>>Next<<<<</p>')
 				$next.click(function(e){
 				e.preventDefault();
 				renderNine();
